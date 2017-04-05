@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Song } from '../../app/models/song'
 import { 
   NavController, 
   AlertController,
@@ -22,7 +22,7 @@ export class HomePage {
      ) {
     this.songs = af.database.list('/songs');
   }
-
+//Test Git
   addSong(){
     let prompt = this.alertCtrl.create({
       title: 'Song name',
